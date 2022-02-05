@@ -1,0 +1,11 @@
+.logo{
+    width: 16.25rem;
+}
+.nav a.nav-link{
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 0.0375rem;
+}
+.nav ul li{
+    text-transform: uppercase;
+}

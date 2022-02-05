@@ -1,11 +1,25 @@
+import Navbar from './components/Navbar';
+import './App.css';
+import Jumbotron from './components/Jumotron';
+import { useState, createContext, useContext } from "react";
 
-import './App.css'
+export const UserContext = createContext();
+
 function App() {
+  const [user,setUser] = useState('khalid Mansoor Portfolio');
+  // const [details,setDetails] = ('');
+  // const getDetails=(details)=>{
+  //   setDetails(details);
+  // }
+  
   return (
     <>
-      <h1>Portfolio Project</h1>
+    <UserContext.Provider value={user}>
+    <Navbar/>
+    <Jumbotron />
+    </UserContext.Provider>
     </>
   );
 }
 
-export default App;
+ export default App;
